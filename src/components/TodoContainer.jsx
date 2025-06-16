@@ -112,7 +112,7 @@ const TodoContainer = () => {
                 </button>
               </div>
             </form>
-            <div className="w-full min-h-[70vh] sm:min-h-[55vh] md:min-h-[60vh] max-h-[50vh] sm:max-h-[55vh] md:max-h-[60vh] overflow-y-auto border border-amber-200 rounded-lg bg-white/50">
+            <div className="w-full min-h-[65vh] sm:min-h-[55vh] md:min-h-[60vh] max-h-[50vh] sm:max-h-[55vh] md:max-h-[60vh] overflow-y-auto border border-amber-200 rounded-lg bg-white/50">
               <div className="w-full p-2 sm:p-3 md:p-4 flex flex-col gap-3">
                 {[...filteredTodos].reverse().map((todo) => {
                   const originalIdx = allTodos.findIndex((t) => t === todo);
