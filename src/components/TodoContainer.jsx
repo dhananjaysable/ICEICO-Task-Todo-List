@@ -53,11 +53,11 @@ const TodoContainer = () => {
             >
               <input
                 type="text"
-                className="w-full px-3 py-3 sm:px-4 sm:py-3 md:px-5 md:py-4 rounded-xl bg-amber-50 placeholder:font-semibold focus:outline-amber-200 ring-1 ring-yellow-300 focus-within:outline-2 text-sm sm:text-base md:text-lg"
+                className="w-full px-3 py-3 sm:px-4 sm:py-3 md:px-5 md:py-4 rounded-xl bg-amber-50 placeholder:font-mono focus:outline-amber-200 ring-1 ring-yellow-300 focus-within:outline-2 text-sm sm:text-base md:text-lg"
                 id="todoInput"
                 value={currentTodo}
                 onChange={(e) => setCurrentTodo(e.target.value)}
-                placeholder="Enter Todo here"
+                placeholder="What do you need to do?"
                 name="todo"
                 autoComplete="off"
               />
