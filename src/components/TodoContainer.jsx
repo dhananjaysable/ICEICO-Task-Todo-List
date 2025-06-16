@@ -98,7 +98,7 @@ const TodoContainer = () => {
             </div>
           </form>
 
-          <div className="todos border border-orange-400 h-96 overflow-auto p-2 sm:p-3 flex flex-col gap-3 mt-2 sm:mt-5">
+          <div className="todos h-96 overflow-auto p-2 sm:p-3 flex flex-col gap-3 mt-2 sm:mt-5">
             {[...filteredTodos].reverse().map((todo, index) => {
               const actualIndex = filteredTodos.length - 1 - index;
 
