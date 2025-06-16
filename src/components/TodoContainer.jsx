@@ -44,7 +44,7 @@ const TodoContainer = () => {
 
   return (
     <div className="flex justify-center min-h-screen ">
-      <div className="w-full max-w-7xl bg-amber-50 sm:p-6 lg:p-8 rounded-md ring-2 ring-inset ring-orange-500">
+      <div className="w-full max-w-7xl bg-amber-50 p-4 sm:p-6 lg:p-8 rounded-md ring-2 ring-inset ring-orange-500">
         <div className="flex flex-col gap-4 w-full">
           <form onSubmit={handleSubmit} className="flex flex-col gap-4">
             <input
