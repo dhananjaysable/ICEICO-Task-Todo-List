@@ -43,9 +43,9 @@ const TodoContainer = () => {
   });
 
   return (
-    <div className="w-full min-h-screen bg-amber-50 p-2 sm:p-4 md:p-6 lg:p-8">
+    <div className="w-full min-h-screen bg-gradient-to-br from-orange-400 to-orange-600 p-2 sm:p-4 md:p-6 lg:p-8">
       <div className="w-full max-w-none sm:max-w-2xl md:max-w-4xl lg:max-w-5xl xl:max-w-6xl mx-auto bg-orange-50 rounded-md shadow-md overflow-hidden">
-        <div className="w-full p-3 sm:p-4 md:p-6 lg:p-8">
+        <div className="w-full min-h-full  p-3 sm:p-4 md:p-6 lg:p-8">
           <div className="w-full flex flex-col gap-4">
             <form
               onSubmit={handleSubmit}
@@ -112,7 +112,7 @@ const TodoContainer = () => {
                 </button>
               </div>
             </form>
-            <div className="w-full min-h-[50vh] sm:min-h-[55vh] md:min-h-[60vh] max-h-[50vh] sm:max-h-[55vh] md:max-h-[60vh] overflow-y-auto border border-amber-200 rounded-lg bg-white/50">
+            <div className="w-full min-h-[60vh] sm:min-h-[55vh] md:min-h-[60vh] max-h-[50vh] sm:max-h-[55vh] md:max-h-[60vh] overflow-y-auto border border-amber-200 rounded-lg bg-white/50">
               <div className="w-full p-2 sm:p-3 md:p-4 flex flex-col gap-3">
                 {[...filteredTodos].reverse().map((todo) => {
                   const originalIdx = allTodos.findIndex((t) => t === todo);
